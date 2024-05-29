@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
     AUTHOR {
         int AuthorID PK
@@ -27,8 +28,5 @@ erDiagram
     }
 
     AUTHOR ||--o{ PUBLICATION : "Writes"
-    AUTHOR ||--o| JOURNAL : "ChiefEditor"
-    AUTHOR ||--o| PROCEEDINGS : "ChiefEditor"
-    BOOK ||--o{ ARTICLE : "Contains"
-    JOURNAL ||--o{ ARTICLE : "Contains"
-    PROCEEDINGS ||--o{ ARTICLE : "Contains"
+    AUTHOR ||--o| JOUR
+
